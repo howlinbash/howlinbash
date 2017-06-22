@@ -1,0 +1,3 @@
+[submodule "hb-pages/_posts"]
+	path = hb-pages/_posts
+	url = gith:howlinbash/blogposts
