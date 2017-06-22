@@ -1,0 +1,52 @@
+# Site configuration
+# 1. Files excluded from Jekyll builds
+# 2. Installed Gems
+# 3. Gem settings
+# 4. Jekyll settings
+# 5. Site settings
+# 6. Site navigation
+
+# 1. Files excluded from Jekyll builds
+exclude:
+- README.md
+- LICENSE
+- CNAME
+- Gemfile
+- Gemfile.lock
+- Guardfile
+- jekyll-theme-heidi
+
+# 2. Installed Gems
+gems:
+- jekyll-paginate
+- jekyll-gist
+- redcarpet
+markdown:         kramdown
+highlighter:      rouge
+
+# 3. Gem settings
+paginate:         3 # jekyll-paginate > items per page
+author:
+  name:           Howlin Bash # jekyll-seo-tag > real name
+  url:            http://howlinbash.com
+
+# 4. Jekyll settings
+sass:
+  style:          compressed # Style compression
+permalink:        pretty  # Permalink style (/YYYY/MM/DD/page-name/)
+excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+timezone:         Europe/London # Timezone for blog posts and alike
+
+# 5. Site settings
+encoding:         utf-8 # Make sure the encoding is right
+title:            "Howlin Bash" # Site name or title, also used in jekyll-seo-tag
+tagline:          'A Jekyll theme'
+description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Based on Hyde by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>. Developed by <a href="https://twitter.com/howlinbash" target="_blank">@howlinbash</a>.'
+url:              http://howlinbash.com
+repo:             https://github.com/howlinbash/heidi
+source: hb-pages
+destination: web
+theme: jekyll-theme-heidi
+
+# 6. Site navigation
+baseurl:          /
