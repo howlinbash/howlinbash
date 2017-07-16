@@ -48,9 +48,11 @@ GEM
     jekyll-gist (1.4.0)
       octokit (~> 4.2)
     jekyll-paginate (1.1.0)
+    jekyll-paginate-v2 (1.7.4)
+      jekyll (~> 3.0)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
-    jekyll-theme-heidi (0.1.0)
+    jekyll-theme-heidi (2.0.1)
       jekyll (~> 3.4)
       jekyll-gist (~> 1.4)
       jekyll-paginate (~> 1.1)
@@ -103,7 +105,7 @@ DEPENDENCIES
   guard-livereload
   jekyll (~> 3.0)
   jekyll-gist
-  jekyll-paginate
+  jekyll-paginate-v2
   jekyll-theme-heidi
   kramdown
   redcarpet

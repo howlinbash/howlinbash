@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Move posts, pages and config from howlinbash repo to heidi dev branch
+# Move posts, pages and config from site repo and start local dev server
 # each file is ignored with "git update-index --assume-unchanged"
 
 hb="$HOME/src/howlinbash/"
@@ -34,3 +34,6 @@ cp $hb$conf $heidi
 sed -i '/source:\ hb-pages/d' $heidi$conf
 sed -i '/destination:\ web/d' $heidi$conf
 sed -i '/theme:\ jekyll-theme-heidi/d' $heidi$conf
+
+# Start local dev server
+bundle exec guard

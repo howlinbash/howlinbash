@@ -4,7 +4,7 @@ group :jekyll_plugins do
     gem 'jekyll', '~>3.0'
     gem 'kramdown'
     gem 'rouge'
-    gem 'jekyll-paginate'
+    gem 'jekyll-paginate-v2'
     gem 'jekyll-gist'
     gem 'redcarpet'
     gem 'jekyll-theme-heidi'
