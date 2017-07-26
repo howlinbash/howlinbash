@@ -5,6 +5,7 @@
 # 4. Jekyll settings
 # 5. Site settings
 # 6. Site navigation
+# 7. Custom vars
 
 # 1. Files excluded from Jekyll builds
 exclude:
@@ -50,11 +51,15 @@ encoding:         utf-8 # Make sure the encoding is right
 title:            "Howlin Bash" # Site name or title, also used in jekyll-seo-tag
 tagline:          'A Jekyll theme'
 description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Based on Hyde by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>. Developed by <a href="https://twitter.com/howlinbash" target="_blank">@howlinbash</a>.'
-repo:             https://github.com/howlinbash/heidi
 source: hb-pages
 destination: web
 theme: jekyll-theme-heidi
-#url: http://howlinbash.com
 
 # 6. Site navigation
 baseurl:          /
+
+# 7. Custom vars
+version:          2.0.1
+
+github:
+  repo:           https://github.com/howlinbash/heidi
