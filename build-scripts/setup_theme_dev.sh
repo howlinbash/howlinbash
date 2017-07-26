@@ -15,7 +15,6 @@ cd $hb
 git submodule update --recursive --remote
 
 cd $heidi
-git checkout dev
 rm $hi_posts/*
 
 # Move all the Pages in howlinbash into heidi /

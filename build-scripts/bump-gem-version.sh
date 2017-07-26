@@ -4,10 +4,11 @@
 
 heidi="$HOME/src/heidi/"
 gemspec="jekyll-theme-heidi.gemspec"
-old_version=`eval cat $gemspec | grep spec.version | cut -f2 -d'"'`
-old_version_regex=`echo $old_version | sed 's/\./\\\\./g'`
 
 cd $heidi
+
+old_version=`eval cat $gemspec | grep spec.version | cut -f2 -d'"'`
+old_version_regex=`echo $old_version | sed 's/\./\\\\./g'`
 
 printf "WARNING: This commit will not be pushed to github\n"
 printf "The current gem version is $old_version\n"
