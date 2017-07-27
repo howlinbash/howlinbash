@@ -1,9 +1,9 @@
 #!/bin/bash
 
 cwd=$(pwd)
-heidi=$HOME/src/heidi
+heidi=$HOME/src/heidi/
 hb=$HOME/src/howlinbash/
-scripts=$HOME/src/howlinbash/build-scripts
+scripts=$hb/build-scripts
 
 . $scripts/lib.sh
 
