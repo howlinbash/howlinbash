@@ -1,11 +1,12 @@
 #!/bin/bash
 
-hb="$HOME/src/howlinbash"
+# TODO
+# push test gem to local server
+# switch to test configs
+# pull test gem from local server
 
 cd $hb
-docker stop blog
-git submodule update --recursive --remote
-bundle update --source jekyll-theme-heidi
-bundle exec jekyll build
-docker build -t howlinbash/howlinbash .    
-docker run -d --rm --name blog -p 3000:80 howlinbash/howlinbash
+serve_image jekyll-theme-heidi
+
+# TODO
+## switch back to live configs

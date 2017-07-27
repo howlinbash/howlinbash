@@ -1,9 +1,11 @@
 #!/bin/bash
 
+cwd=$(pwd)
 heidi=$HOME/src/heidi
+hb=$HOME/src/howlinbash/
 scripts=$HOME/src/howlinbash/build-scripts
 
-cd $HOME
+. $scripts/lib.sh
 
 if [ $# -lt 1 ]
 then
@@ -24,8 +26,7 @@ case "$1" in
     fi
     ;;
 'serve')
-    cd $heidi
-    bundle exec guard
+    serve_and_watch
     ;;
 'test')
     . $scripts/setup_site_dev.sh
@@ -40,3 +41,5 @@ case "$1" in
     echo "Usage : $0 <argument>"
     ;;
 esac
+
+cd $cwd

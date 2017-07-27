@@ -3,17 +3,12 @@
 # Move posts, pages and config from site repo and start local dev server
 # each file is ignored with "git update-index --assume-unchanged"
 
-hb="$HOME/src/howlinbash/"
 hb_pages="$hb/hb-pages/"
 hb_posts="$hb_pages/_posts/"
-heidi="$HOME/src/heidi/"
 hi_posts="$heidi/_posts/"
 conf="_config.yml"
 
-# Pull new posts
-cd $hb
-git submodule update --recursive --remote
-
+get_latest_posts
 cd $heidi
 rm $hi_posts/*
 
@@ -33,6 +28,3 @@ cp $hb$conf $heidi
 sed -i '/source:\ hb-pages/d' $heidi$conf
 sed -i '/destination:\ web/d' $heidi$conf
 sed -i '/theme:\ jekyll-theme-heidi/d' $heidi$conf
-
-# Start local dev server
-bundle exec guard

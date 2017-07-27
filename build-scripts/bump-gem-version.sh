@@ -2,7 +2,6 @@
 
 # bump gem version; push gem; commit version bump.
 
-heidi="$HOME/src/heidi/"
 gemspec="jekyll-theme-heidi.gemspec"
 
 cd $heidi
