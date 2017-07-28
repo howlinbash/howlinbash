@@ -3,7 +3,7 @@
 # Build docker image from latest changes and deploy to server
 
 get_latest_posts
-build_image jekyll-theme-heidi
+build_image $live_theme
 docker push howlinbash/howlinbash
 
 ssh hb << EOF

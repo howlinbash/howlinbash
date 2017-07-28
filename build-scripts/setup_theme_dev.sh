@@ -3,11 +3,6 @@
 # Move posts, pages and config from site repo and start local dev server
 # each file is ignored with "git update-index --assume-unchanged"
 
-hb_pages="$hb/hb-pages/"
-hb_posts="$hb_pages/_posts/"
-hi_posts="$heidi/_posts/"
-conf="_config.yml"
-
 get_latest_posts
 cd $heidi
 rm $hi_posts/*
@@ -27,4 +22,4 @@ rm $heidi$conf
 cp $hb$conf $heidi
 sed -i '/source:\ hb-pages/d' $heidi$conf
 sed -i '/destination:\ web/d' $heidi$conf
-sed -i '/theme:\ jekyll-theme-heidi/d' $heidi$conf
+sed -i "/theme:\ $live_theme/d" $heidi$conf

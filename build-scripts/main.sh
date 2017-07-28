@@ -4,6 +4,14 @@ cwd=$(pwd)
 heidi=$HOME/src/heidi/
 hb=$HOME/src/howlinbash/
 scripts=$hb/build-scripts
+hb_pages="$hb/hb-pages/"
+hb_posts="$hb_pages/_posts/"
+hi_posts="$heidi/_posts/"
+test_theme="heidi-test"
+live_theme="jekyll-theme-heidi"
+conf="_config.yml"
+Gemfile="Gemfile"
+
 
 . $scripts/lib.sh
 
