@@ -14,6 +14,7 @@ function get_latest_posts()
 
 function build_image()
 {
+    cd $hb
     local theme=$1
     bundle update --source $theme
     bundle exec jekyll build
