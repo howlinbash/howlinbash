@@ -28,7 +28,7 @@ case "$1" in
     read answer
     if [ $answer = "yes" ];
     then 
-        . $scripts/setup_theme_dev.sh
+        . $scripts/load_heidi_dev.sh
     else
         echo "Dev load cancelled"
     fi
@@ -37,13 +37,13 @@ case "$1" in
     serve_and_watch
     ;;
 'test')
-    . $scripts/setup_site_dev.sh
+    . $scripts/test_heidi_gem.sh
     ;;
 'bump')
-    . $scripts/bump-gem-version.sh
+    . $scripts/publish_heidi_gem.sh
     ;;
 'deploy')
-    . $scripts/deploy_howlinbash.sh
+    . $scripts/publish_howlinbash.sh
     ;;
 *)
     echo "Usage : $0 <argument>"
