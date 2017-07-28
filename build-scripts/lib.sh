@@ -12,6 +12,18 @@ function get_latest_posts()
     git submodule update --recursive --remote
 }
 
+function start_gem_server()
+{
+    if [ $(docker inspect -f '{{.State.Running}}' geminabox) = "true" ]
+    then
+        return
+    else
+        cd $HOME/src/geminabox
+        docker build -t geminabox .
+        docker run -d --rm --name geminabox -p 9292:9292 geminabox:latest
+    fi
+}
+
 function build_image()
 {
     cd $hb

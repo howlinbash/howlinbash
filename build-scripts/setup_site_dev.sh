@@ -1,5 +1,7 @@
 #!/bin/bash
 
+start_gem_server
+
 # Switch to test configs
 sed -i "s/$live_theme/$test_theme/g" $hb$conf
 sed -i "1 a source 'http://localhost:9292'" $hb$Gemfile
