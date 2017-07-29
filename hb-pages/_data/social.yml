@@ -1,0 +1,20 @@
+# This file contains meta data for various social media sites
+---
+  email:
+    name: Email
+    icon: icon-mail
+  twitter:
+    name: Twitter
+    icon: icon-twitter
+    prepend: 'https://twitter.com/'
+  rss:
+    name: RSS
+    icon: icon-rss
+  github:
+    name: GitHub
+    icon: icon-github
+    prepend: "https://github.com/"
+  linkedin:
+    name: LinkedIn
+    icon: icon-linkedin
+    prepend: "https://www.linkedin.com/in/"
