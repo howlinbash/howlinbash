@@ -20,6 +20,6 @@ done
 # Move config file and remove hb specific build instructions
 rm $heidi$conf
 cp $hb$conf $heidi
-sed -i '/source:\ hb-pages/d' $heidi$conf
-sed -i '/destination:\ web/d' $heidi$conf
-sed -i "/theme:\ $live_theme/d" $heidi$conf
+sed -i 's/^source:/# source:/' $heidi$conf
+sed -i 's/^destination:/# destination:/' $heidi$conf
+sed -i "s/^theme:/# theme:/" $heidi$conf

@@ -28,7 +28,7 @@ case "$1" in
     read answer
     if [ $answer = "yes" ];
     then 
-        . $scripts/load_heidi_dev.sh
+        . $scripts/load_heidi_dev_env.sh
     else
         echo "Dev load cancelled"
     fi
