@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Copy latest configs from heidi
+cp $heidi$conf $hb
+sed -i 's/^# source:/source:/' $hb$conf
+sed -i 's/^# destination:/destination:/' $hb$conf
+sed -i "s/^# theme:/theme:/" $hb$conf
+
 start_gem_server
 
 # Switch to test configs
