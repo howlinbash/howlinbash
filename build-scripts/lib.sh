@@ -1,11 +1,5 @@
 #!/bin/bash
 
-function serve_and_watch()
-{
-    cd $heidi
-    bundle exec guard
-}
-
 function get_latest_posts()
 {
     cd $hb

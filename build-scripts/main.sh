@@ -34,7 +34,8 @@ case "$1" in
     fi
     ;;
 'serve')
-    serve_and_watch
+    . $scripts/dev_server.sh 
+    init_server $2
     ;;
 'test')
     . $scripts/test_heidi_gem.sh
