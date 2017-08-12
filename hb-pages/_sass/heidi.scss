@@ -1,12 +1,12 @@
 /*
- *  __                      __         
- * /\ \              __    /\ \  __    
- * \ \ \___      __ /\_\   \_\ \/\_\   
- *  \ \  _ `\  /'__`\/\ \  /'_` \/\ \  
- *   \ \ \ \ \/\  __/\ \ \/\ \L\ \ \ \ 
+ *  __                      __
+ * /\ \              __    /\ \  __
+ * \ \ \___      __ /\_\   \_\ \/\_\
+ *  \ \  _ `\  /'__`\/\ \  /'_` \/\ \
+ *   \ \ \ \ \/\  __/\ \ \/\ \L\ \ \ \
  *    \ \_\ \_\ \____\\ \_\ \___,_\ \_\
  *     \/_/\/_/\/____/ \/_/\/__,_ /\/_/
- * 
+ *
  * Designed, built, and released under MIT license by @mdo. Learn more at
  * https://github.com/poole/hyde.
  */
@@ -67,7 +67,7 @@ body {
        height: 32px;
        width: 32px;
     }
- 
+
     path {
         fill: #FFFFFF;
     }
@@ -97,45 +97,45 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16pt;
     font-weight: bold;
-    margin-top: 0px; 
-    margin-bottom: 0px; 
-    line-height: 100%
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 100%;
 }
 
-.cv h2 { 
+.cv h2 {
     font-family: Arial, sans-serif;
     font-size: 13pt;
     font-weight: bold;
-    margin-bottom: 15px; 
-    margin-top: 10px; 
-    line-height: 180%
+    margin-bottom: 15px;
+    margin-top: 10px;
+    line-height: 180%;
 }
 
-.cv h3 { 
+.cv h3 {
     font-family: Arial, sans-serif;
     font-size: 11pt;
     font-weight: bold;
-    margin-bottom: 0px; 
-    margin-top: 0px; 
-    line-height: 180%
+    margin-bottom: 0px;
+    margin-top: 0px;
+    line-height: 180%;
 }
 
 .cv p {
-    margin-bottom: 0rem; 
-    margin-top: 0px; 
-    line-height: 150%
+    margin-bottom: 0rem;
+    margin-top: 0px;
+    line-height: 150%;
 }
 
 .cv-underline {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .cv-italic {
-    font-style: italic
+    font-style: italic;
 }
 
 .cv-add-margin {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 #cv-location {
@@ -148,12 +148,12 @@ body {
 }
 
 #cv-skills div {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 @media (max-width: 64em) {
     #cv-skills {
-        display: block
+        display: block;
     }
 }
 
@@ -167,7 +167,7 @@ body {
 }
 
 #cv-education div {
-    width: 50%; 
+    width: 50%;
     float: left;
 }
 
@@ -177,10 +177,10 @@ body {
         margin-bottom: 10px;
     }
     .cv-course-title {
-        text-decoration: underline
+        text-decoration: underline;
     }
     #cv-education div {
-        width: 100%; 
-        display: block
+        width: 100%;
+        display: block;
     }
 }
