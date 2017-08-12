@@ -91,39 +91,35 @@ body {
     text-align: justify;
     font-size: 11pt;
     overflow: auto;
-}
 
-.cv h1 {
-    font-family: Arial, sans-serif;
-    font-size: 16pt;
-    font-weight: bold;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    line-height: 100%;
-}
+    h1, h2, h3 {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 180%;
+    }
 
-.cv h2 {
-    font-family: Arial, sans-serif;
-    font-size: 13pt;
-    font-weight: bold;
-    margin-bottom: 15px;
-    margin-top: 10px;
-    line-height: 180%;
-}
+    h1 {
+        font-size: 16pt;
+        line-height: 100%;
+    }
 
-.cv h3 {
-    font-family: Arial, sans-serif;
-    font-size: 11pt;
-    font-weight: bold;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    line-height: 180%;
-}
+    h2 {
+        font-size: 13pt;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
 
-.cv p {
-    margin-bottom: 0rem;
-    margin-top: 0px;
-    line-height: 150%;
+    h3 {
+        font-size: 11pt;
+    }
+
+    p {
+        margin-bottom: 0rem;
+        margin-top: 0px;
+        line-height: 150%;
+    }
 }
 
 .cv-underline {
@@ -145,10 +141,10 @@ body {
 #cv-skills {
     display: flex;
     justify-content: space-between;
-}
 
-#cv-skills div {
-    margin-bottom: 10px;
+    div {
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 64em) {
