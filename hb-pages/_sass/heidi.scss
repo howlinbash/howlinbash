@@ -1,0 +1,182 @@
+/*
+ *  __                      __
+ * /\ \              __    /\ \  __
+ * \ \ \___      __ /\_\   \_\ \/\_\
+ *  \ \  _ `\  /'__`\/\ \  /'_` \/\ \
+ *   \ \ \ \ \/\  __/\ \ \/\ \L\ \ \ \
+ *    \ \_\ \_\ \____\\ \_\ \___,_\ \_\
+ *     \/_/\/_/\/____/ \/_/\/__,_ /\/_/
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/hyde.
+ */
+
+/*
+ * Contents
+ *
+ * Global resets
+ * Sidebar
+ * CV
+ */
+
+/*
+ * Global resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
+
+body {
+  color: #323232;
+}
+
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
+
+.sidebar {
+    background: center / cover;
+
+    .lead {
+        color: #fff;
+    }
+
+    p.lead {
+        margin-top: 20px;
+    }
+}
+
+.sidebar-social {
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+    }
+}
+
+.social-button {
+    svg {
+       height: 32px;
+       width: 32px;
+    }
+
+    path {
+        fill: #FFFFFF;
+    }
+
+    :hover path {
+        fill: #808080;
+    }
+}
+
+#icon-mail svg {
+    height: 32px;
+    width: 40px;
+}
+
+/*
+ * CV
+ *
+ */
+
+.cv {
+    text-align: justify;
+    font-size: 11pt;
+    overflow: auto;
+
+    h1, h2, h3 {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 180%;
+    }
+
+    h1 {
+        font-size: 16pt;
+        line-height: 100%;
+    }
+
+    h2 {
+        font-size: 13pt;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    h3 {
+        font-size: 11pt;
+    }
+
+    p {
+        margin-bottom: 0rem;
+        margin-top: 0px;
+        line-height: 150%;
+    }
+}
+
+.cv-underline {
+    text-decoration: underline;
+}
+
+.cv-italic {
+    font-style: italic;
+}
+
+.cv-add-margin {
+    margin-bottom: 20px;
+}
+
+#cv-location {
+    font-size: 14pt;
+}
+
+#cv-skills {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 70em) {
+    #cv-skills {
+        display: block;
+    }
+}
+
+.cv-course {
+    display: flex;
+    padding: 0px;
+}
+
+.cv-course-title {
+    width: 150px;
+}
+
+#cv-education div {
+    width: 50%;
+    float: left;
+}
+
+@media (max-width: 78em) {
+    .cv-course {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .cv-course-title {
+        text-decoration: underline;
+    }
+    #cv-education div {
+        width: 100%;
+        display: block;
+    }
+}
