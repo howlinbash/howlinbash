@@ -126,27 +126,25 @@ body {
     line-height: 150%
 }
 
-.cv-section {
+.cv-add-margin {
     margin-bottom: 20px; 
 }
 
-.cv-location {
+#cv-location {
     font-size: 14pt;
-    margin-bottom: 0px; 
-    line-height: 100%
 }
 
-.cv-skills {
+#cv-skills {
     display: flex;
     justify-content: space-between;
 }
 
-.cv-skills div {
+#cv-skills div {
     margin-bottom: 10px; 
 }
 
 @media (max-width: 64em) {
-    .cv-skills {
+    #cv-skills {
         display: block
     }
 }
@@ -159,14 +157,6 @@ body {
     font-style: italic
 }
 
-.cv-education {
-}
-
-.cv-education div {
-    width: 50%; 
-    float: left;
-}
-
 .cv-course {
     display: flex;
     padding: 0px;
@@ -176,11 +166,12 @@ body {
     width: 150px;
 }
 
+#cv-education div {
+    width: 50%; 
+    float: left;
+}
+
 @media (max-width: 70em) {
-    .cv-education div {
-        width: 100%; 
-        display: block
-    }
     .cv-course {
         display: block;
         margin-bottom: 10px;
@@ -188,6 +179,8 @@ body {
     .cv-course-title {
         text-decoration: underline
     }
+    #cv-education div {
+        width: 100%; 
+        display: block
+    }
 }
-
-
