@@ -126,6 +126,14 @@ body {
     line-height: 150%
 }
 
+.cv-underline {
+    text-decoration: underline
+}
+
+.cv-italic {
+    font-style: italic
+}
+
 .cv-add-margin {
     margin-bottom: 20px; 
 }
@@ -147,14 +155,6 @@ body {
     #cv-skills {
         display: block
     }
-}
-
-.cv-job-title {
-    text-decoration: underline
-}
-
-.cv-job-dates {
-    font-style: italic
 }
 
 .cv-course {
