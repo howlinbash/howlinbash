@@ -1,0 +1,193 @@
+/*
+ *  __                      __         
+ * /\ \              __    /\ \  __    
+ * \ \ \___      __ /\_\   \_\ \/\_\   
+ *  \ \  _ `\  /'__`\/\ \  /'_` \/\ \  
+ *   \ \ \ \ \/\  __/\ \ \/\ \L\ \ \ \ 
+ *    \ \_\ \_\ \____\\ \_\ \___,_\ \_\
+ *     \/_/\/_/\/____/ \/_/\/__,_ /\/_/
+ * 
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/hyde.
+ */
+
+/*
+ * Contents
+ *
+ * Global resets
+ * Sidebar
+ * CV
+ */
+
+/*
+ * Global resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
+
+body {
+  color: #323232;
+}
+
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
+
+.sidebar {
+    background: center / cover;
+
+    .lead {
+        color: #fff;
+    }
+
+    p.lead {
+        margin-top: 20px;
+    }
+}
+
+.sidebar-social {
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+    }
+}
+
+.social-button {
+    svg {
+       height: 32px;
+       width: 32px;
+    }
+ 
+    path {
+        fill: #FFFFFF;
+    }
+
+    :hover path {
+        fill: #808080;
+    }
+}
+
+#icon-mail svg {
+    height: 32px;
+    width: 40px;
+}
+
+/*
+ * CV
+ *
+ */
+
+.cv {
+    text-align: justify;
+    font-size: 11pt;
+    margin-bottom: 40px;
+}
+
+.cv h1 {
+    font-family: Arial, sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    line-height: 100%
+}
+
+.cv h2 { 
+    font-family: Arial, sans-serif;
+    font-size: 13pt;
+    font-weight: bold;
+    margin-bottom: 15px; 
+    margin-top: 10px; 
+    line-height: 180%
+}
+
+.cv h3 { 
+    font-family: Arial, sans-serif;
+    font-size: 11pt;
+    font-weight: bold;
+    margin-bottom: 0px; 
+    margin-top: 0px; 
+    line-height: 180%
+}
+
+.cv p {
+    margin-bottom: 0rem; 
+    margin-top: 0px; 
+    line-height: 150%
+}
+
+.cv-section {
+    margin-bottom: 20px; 
+}
+
+.cv-location {
+    font-size: 14pt;
+    margin-bottom: 0px; 
+    line-height: 100%
+}
+
+.cv-skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cv-skills div {
+    margin-bottom: 10px; 
+}
+
+@media (max-width: 64em) {
+    .cv-skills {
+        display: block
+    }
+}
+
+.cv-job-title {
+    text-decoration: underline
+}
+
+.cv-job-dates {
+    font-style: italic
+}
+
+.cv-education {
+}
+
+.cv-education div {
+    width: 50%; 
+    float: left;
+}
+
+.cv-course {
+    display: flex;
+    padding: 0px;
+}
+
+.cv-course-title {
+    width: 150px;
+}
+
+@media (max-width: 70em) {
+    .cv-education div {
+        width: 100%; 
+        display: block
+    }
+    .cv-course {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .cv-course-title {
+        text-decoration: underline
+    }
+}
+
+
