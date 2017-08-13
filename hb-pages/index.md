@@ -3,28 +3,25 @@ layout: default
 title: Home
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+Hi, I'm Bash and this is my blog.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+Welcome.
 
-There are currently two themes built on Poole:
+I'm a full-stack developer based in sunny London. 
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+I ♥ 
+ - computers
+ - the open web
+ - open source software
+ - linux
+ - python
+ - javascript
+ - and that film where Keanu Reeves pwns the robots.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+This blog is mostly about computers.
 
-## Setup
+If you're thinking of hiring me, check out my [CV]({{site.url}}/cv) and send me an email.
 
-Some fun facts about the setup of this project include:
+If you'd like to get in touch for any other reason, well then go right ahead.
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+Howlin Bash - August 2017
