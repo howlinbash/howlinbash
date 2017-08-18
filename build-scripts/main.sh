@@ -3,6 +3,7 @@
 cwd=$(pwd)
 heidi=$HOME/src/heidi/
 hb=$HOME/src/howlinbash/
+bp=$HOME/src/blogposts/
 scripts=$hb/build-scripts
 hb_pages="$hb/hb-pages/"
 hb_posts="$hb_pages/_posts/"
