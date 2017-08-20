@@ -10,6 +10,7 @@ hb_posts="$hb_pages/_posts/"
 hi_posts="$heidi/_posts/"
 test_theme="heidi-test"
 live_theme="jekyll-theme-heidi"
+image="howlinbash/howlinbash"
 conf="_config.yml"
 Gemfile="Gemfile"
 
@@ -46,6 +47,7 @@ case "$1" in
     ;;
 'deploy')
     . $scripts/publish_howlinbash.sh
+    deploy $2
     ;;
 *)
     echo "Usage : $0 <argument>"
