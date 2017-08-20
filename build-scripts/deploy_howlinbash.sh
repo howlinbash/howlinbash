@@ -21,6 +21,7 @@ function deploy_to_live()
     docker tag $image:next $image:current
     docker push $image:current
     ssh hb << EOF
+        cd compose
         docker pull $image:previous
         docker tag $image:staging $image:live
         docker tag $image:previous $image:staging
@@ -28,9 +29,10 @@ function deploy_to_live()
 EOF
 }
 
-function revert_to_live()
+function revert_live()
 {
     ssh hb << EOF
+        cd compose
         docker tag $image:staging $image:live
         docker pull $image:current
         docker tag $image:current $image:staging
