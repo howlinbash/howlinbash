@@ -46,7 +46,7 @@ case "$1" in
     . $scripts/publish_heidi_gem.sh
     ;;
 'deploy')
-    . $scripts/publish_howlinbash.sh
+    . $scripts/deploy_howlinbash.sh
     deploy $2
     ;;
 *)
