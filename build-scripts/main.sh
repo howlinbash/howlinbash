@@ -3,12 +3,14 @@
 cwd=$(pwd)
 heidi=$HOME/src/heidi/
 hb=$HOME/src/howlinbash/
+bp=$HOME/src/blogposts/
 scripts=$hb/build-scripts
 hb_pages="$hb/hb-pages/"
 hb_posts="$hb_pages/_posts/"
 hi_posts="$heidi/_posts/"
 test_theme="heidi-test"
 live_theme="jekyll-theme-heidi"
+image="howlinbash/howlinbash"
 conf="_config.yml"
 Gemfile="Gemfile"
 
@@ -44,7 +46,11 @@ case "$1" in
     . $scripts/publish_heidi_gem.sh
     ;;
 'deploy')
-    . $scripts/publish_howlinbash.sh
+    . $scripts/deploy_howlinbash.sh
+    deploy $2
+    ;;
+'post')
+    . $scripts/post_blogpost.sh
     ;;
 *)
     echo "Usage : $0 <argument>"

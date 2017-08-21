@@ -1,3 +1,4 @@
 [submodule "hb-pages/_posts"]
 	path = hb-pages/_posts
-	url = gith:howlinbash/blogposts
+    url = gith:howlinbash/blogposts
+	branch = master
