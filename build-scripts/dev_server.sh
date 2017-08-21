@@ -33,6 +33,7 @@ function check_howlinbash_server()
 
 function checkout_post_branch()
 {
+    cd $bp
     if [ "$(git branch --list ${post_name})" ]
     then
         git checkout $post_name
