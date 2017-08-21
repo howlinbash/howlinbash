@@ -53,3 +53,9 @@ function make_gem()
     gem build $gemspec                                                                             
     rm $old_gem
 }
+
+function push_image_as()
+{
+    docker tag $image:$1 $image:$2
+    docker push $image:$2
+}

@@ -3,10 +3,8 @@
 function post_post()
 {
     docker pull $image:current
-    docker tag $image:current $image:previous
-    docker push $image:previous
-    docker tag $image:next $image:current
-    docker push $image:current
+    push_image_as current previous
+    push_image_as next current
     ssh hb << EOF
         cd compose
         docker pull $image:previous

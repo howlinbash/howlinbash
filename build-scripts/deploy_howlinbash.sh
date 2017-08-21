@@ -16,10 +16,8 @@ EOF
 function deploy_to_live()
 {
     docker pull $image:current
-    docker tag $image:current $image:previous
-    docker push $image:previous
-    docker tag $image:next $image:current
-    docker push $image:current
+    push_image_as current previous
+    push_image_as next current
     ssh hb << EOF
         cd compose
         docker pull $image:previous
@@ -39,8 +37,7 @@ function revert_live()
         docker-compose up -d
 EOF
     docker pull $image:previous
-    docker tag $image:previous $image:current
-    docker push $image:current
+    push_image_as previous current
 }
 
 function deploy()
