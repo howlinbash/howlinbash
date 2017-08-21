@@ -24,7 +24,7 @@ function build_image()
     local theme=$1
     bundle update --source $theme
     bundle exec jekyll build
-    docker build -t howlinbash/howlinbash .
+    docker build -t $image$2 .
 }
 
 function serve_image()
@@ -32,7 +32,7 @@ function serve_image()
     local theme=$1
     docker stop blog
     build_image $theme
-    docker run -d --rm --name blog -p 3000:80 howlinbash/howlinbash
+    docker run -d --rm --name blog -p 3000:80 $image
 }
 
 function make_gem()
@@ -52,4 +52,10 @@ function make_gem()
     sed -i "/spec\.version/{s!$old_version!$new_version!}" $gemspec
     gem build $gemspec                                                                             
     rm $old_gem
+}
+
+function push_image_as()
+{
+    docker tag $image:$1 $image:$2
+    docker push $image:$2
 }
