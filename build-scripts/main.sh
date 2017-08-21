@@ -49,6 +49,9 @@ case "$1" in
     . $scripts/deploy_howlinbash.sh
     deploy $2
     ;;
+'post')
+    . $scripts/post_blogpost.sh
+    ;;
 *)
     echo "Usage : $0 <argument>"
     ;;
