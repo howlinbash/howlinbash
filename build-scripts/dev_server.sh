@@ -73,16 +73,16 @@ function preview_post()
 function init_server()
 {
     case "$1" in
-        'hi')
+        'theme')
             serve_heidi
             ;;
-        'hb')
+        'site')
             serve_howlinbash
             ;;
-        'po')
+        'post')
             preview_post
             ;;
-        'no')
+        'stop')
             stop_howlinbash
             ;;
         *)
