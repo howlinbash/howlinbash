@@ -119,6 +119,10 @@ body {
         margin-top: 0px;
         line-height: 150%;
     }
+
+    ul ul {
+        margin-bottom: 0rem;
+    }
 }
 
 .cv-underline {
@@ -179,3 +183,10 @@ body {
         display: block;
     }
 }
+
+@media (min-height: 786px) {
+    .homepage {
+        position: absolute;
+        bottom: 3rem;
+    } 
+} 

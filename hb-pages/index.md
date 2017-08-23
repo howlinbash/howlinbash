@@ -1,11 +1,11 @@
 ---
-layout: default
+layout: home
 title: Home
 ---
 
 Hi, I'm Bash and this is my blog.
 
-Welcome.
+**Welcome.**
 
 I'm a full-stack developer based in sunny London. 
 
@@ -22,6 +22,6 @@ This blog is mostly about computers.
 
 If you're thinking of hiring me, check out my [CV]({{site.url}}/cv) and send me an email.
 
-If you'd like to get in touch for any other reason, well then go right ahead.
+If you'd like to get in touch for any other reason, go right ahead.
 
 Howlin Bash - August 2017
