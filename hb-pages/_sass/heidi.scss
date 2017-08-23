@@ -179,3 +179,10 @@ body {
         display: block;
     }
 }
+
+@media (min-height: 786px) {
+    .homepage {
+        position: absolute;
+        bottom: 3rem;
+    } 
+} 
