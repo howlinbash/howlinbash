@@ -30,9 +30,8 @@ git push origin master
 
 # Delete old blogpost draft
 git checkout drafts
-git rm $post_file 
-git commit -m "Remove draft $post_name"
 git merge --no-ff --no-edit master
+git push origin drafts
 git branch -d $post_name
 
 build_image $live_theme ":next"
