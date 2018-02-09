@@ -7,15 +7,15 @@ Hi, I'm Bash and this is my blog.
 
 **Welcome.**
 
-I'm a full-stack developer based in sunny London. 
+I'm a web developer based in sunny London. 
 
 I ♥ 
  - computers
  - the open web
+ - javascript
  - open source software
  - linux
  - python
- - javascript
  - and that film where Keanu Reeves pwns the robots.
 
 This blog is mostly about computers.
